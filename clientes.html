@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Clientes</title>
+</head>
+<body>
+    <header>
+        <h1>Nuestros Clientes</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="productos.html">Productos</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Testimonios de Clientes</h2>
+        <div id="testimonials">
+            <p><strong>Ana Tello</strong>: Es un excelente lugar, muy buena la comida.</p>
+            <p><strong>Carlos Ramon</strong>: Muy buena atención.</p>
+            <p><strong>Simone Bone</strong>: Acogedor el lugar, comida buena.</p>
+            <p><strong>Katia Bone</strong>: Excelente.</p>
+        </div>
+
+        <h3>Deja tu opinión:</h3>
+        <form id="testimonialForm" onsubmit="addTestimonial(event)">
+            <input type="text" id="clientName" placeholder="Tu nombre" required>
+            <textarea id="clientOpinion" placeholder="Tu opinión" required></textarea>
+            <button type="submit">Enviar Opinión</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Comida</p>
+    </footer>
+
+    <script>
+        function addTestimonial(event) {
+            event.preventDefault(); // Previene el envío del formulario
+
+            const name = document.getElementById('clientName').value;
+            const opinion = document.getElementById('clientOpinion').value;
+
+            // Crea un nuevo elemento para el testimonio
+            const newTestimonial = document.createElement('p');
+            newTestimonial.innerHTML = `<strong>${name}</strong>: ${opinion}`;
+            
+            // Añade el nuevo testimonio al div de testimonios
+            document.getElementById('testimonials').appendChild(newTestimonial);
+
+            // Limpia los campos del formulario
+            document.getElementById('clientName').value = '';
+            document.getElementById('clientOpinion').value = '';
+        }
+    </script>
+</body>
+</html>

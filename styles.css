@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f70f83;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1eddff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 15px;
+    text-decoration: none;
+    color: #c93232;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.item {
+    background: #c4f356;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.item:hover img {
+    transform: scale(1.05);
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.buy-button {
+    background-color: #030fb9;
+    color: rgb(64, 218, 17);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+.buy-button:hover {
+    background-color: #218838;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #18fcf0;
+}
+
+/* Estilo para cambiar el color del texto al pasar el mouse */
+h1, h2, nav a, p {
+    transition: color 0.3s ease; /* Efecto de transición suave */
+}
+
+h1:hover, h2:hover, nav a:hover, p:hover {
+    color: #fc1313; /* Color de cambio (puedes elegir el que desees) */
+}
+/* Estilo para el body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+/* Estilo para la galería */
+.gallery {
+    display: flex;
+    justify-content: center; /* Centra los items dentro de la galería */
+    flex-wrap: wrap; /* Permite que los items se ajusten a varias líneas */
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+/* Estilo para cada item */
+.item {
+    text-align: center; /* Centra el texto y el botón dentro de cada item */
+}
+
+/* Opcional: Estilo para las imágenes */
+.item img {
+    max-width: 300px; /* Limita el ancho de las imágenes */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+body {
+    background-image: url('https://img.freepik.com/fotos-premium/mesa-distribucion-cocina-restaurante-chef-prepara-comida_109285-2450.jpg'); /* Reemplaza con la URL de tu imagen de fondo */
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: rgb(8, 8, 8); /* Cambia el color del texto para mayor contraste */
+}
+
+header, footer {
+    background-color: rgba(59, 221, 19, 0.7); /* Fondo semi-transparente para mejorar la legibilidad */
+    padding: 20px;
+}
+
+nav a {
+    color: rgb(41, 6, 243); /* Color de los enlaces de navegación */
+    margin: 0 15px;
+    text-decoration: none;
+}
+form label {
+    font-weight: bold; /* Hace que las etiquetas del formulario estén en negrita */
+}
+
+form input,
+form textarea,
+form button {
+    font-weight: bold; /* Hace que los campos de entrada, textarea y botón estén en negrita */
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tienda de Comida</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos al restaurante "NR"</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="productos.html">Productos</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Nuestros Productos Destacados</h2>
+        <div class="gallery">
+            <div class="item">
+                <img src="https://i.ytimg.com/vi/iC6qFEjBzD8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAPKQGWY4t4D6u3dSfVlJWAD90sag" alt="Comida 1">
+                <p>Ceviche mixto</p>
+                <button class="buy-button" onclick="buyProduct('Comida 1')">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="https://yayaya.com.ec/wp-content/uploads/2021/10/receta_camarones_apanados.jpg" alt="Comida 2">
+                <p>Camarones apanados</p>
+                <button class="buy-button" onclick="buyProduct('Comida 2')">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="https://comedera.com/wp-content/uploads/sites/9/2022/04/sopa-de-langosta.jpg" alt="Comida 3">
+                <p>Caldo de langosta</p>
+                <button class="buy-button" onclick="buyProduct('Comida 3')">Comprar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Comida</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
